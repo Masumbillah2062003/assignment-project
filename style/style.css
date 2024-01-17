@@ -1,0 +1,894 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+
+
+/* header part css design start */
+.header{
+    padding: 50px 70px 100px;
+}
+
+/* navbar part css design */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.logo{
+    max-width: 48px;
+}
+.logo-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.name > .hero{
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+.name > .travel{
+    color: #FF5400;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+.navbar .manubar{
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+.manubar > .manu-list{
+    list-style: none;
+}
+.manu-list > a{
+    text-decoration: none;
+    color: #424247;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.home{
+    color: #FF5400;
+    font-weight: 700;
+}
+.bar-icon{
+    display: none;
+    color: #131318;
+    font-size: 1.3rem;
+}
+
+
+/* banner part css design */
+.banner{
+    height: 500px;
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group\ 13.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    text-align: center;
+    padding: 106px 0px;
+}
+.banner-title{
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+}
+.banner-description{
+    max-width: 676px;
+    margin: 0 auto;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 24px 0px 48px;
+}
+.all-input{
+    max-width: 770px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.30);
+    border-radius: 8px;
+}
+.all-input > input, select, button{
+    width: 175px;
+    padding: 16px;
+    border-radius: 8px;
+    border: 0;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 1rem;
+    font-weight: 400;
+    outline: none;
+}
+.all-input > input::placeholder{
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.banner-btn{
+    background-color: #FF5400;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+/* header part css design end */
+
+/* main part design start */
+.our-popular-tours{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0px 100px;
+    height: 50%;
+}
+.popular-description{
+    width: 50%;
+    height: 100%;
+}
+.our-popular-title{
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.popular-description > ul > li, .our-popular-description{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 24px;
+}
+.popular-description > ul{
+    padding-left: 20px;
+}
+.popular-btn{
+    margin-top: 32px;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border-radius: 8px;
+    background-color: #FF5400;
+    padding: 13px 34px;
+}
+.popular-img{
+    width: 50%;
+}
+.popular-img > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* choose your destination section */
+.choose-your-destination{
+    padding: 100px 100px 0px;
+}
+.choose-title{
+    color: #131318;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.choose-description{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 630px;
+    margin: 0 auto;
+}
+.choose-section-all-images{
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    gap: 24px;
+}
+.choose-images-1{
+    position: relative;
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 1;
+}
+.choose-images-1 > img{
+    width: 100%;
+}
+.choose-images-2{
+    position: relative;
+    grid-column: 7 / span 6;
+    grid-row: 1 / span 1;
+}
+.choose-images-2 > img{
+    width: 100%;
+}
+.choose-images-3{
+    position: relative;
+    grid-column:  1/ span 4;
+    grid-row: 2 / span 1;
+}
+.choose-images-3 > img{
+    width: 100%;
+    /* height: 100%; */
+}
+.choose-images-4{
+    position: relative;
+    grid-column: 5 / span 5;
+    grid-row: 2 / span 1;
+}
+.choose-images-4 > img{
+    width: 100%;
+    /* height: 100%; */
+}
+.choose-images-5{
+    position: relative;
+    grid-column: 10 / span 3;
+    grid-row: 2 / span 1;
+    
+}
+.choose-images-5 > img{
+    width: 100%;
+    /* height: 100%; */
+}
+.choose-images-6{
+    position: relative;
+    grid-column: 1 / span 5;
+    grid-row: 3 / span 1;
+}
+.choose-images-6 > img{
+    width: 100%;
+}
+.choose-images-7{
+    position: relative;
+    grid-column: 6 / span 7;
+    grid-row: 3 / span 1;
+}
+.choose-images-7 > img{
+    width: 100%;
+}
+.img-country-name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+/* Why Choose Us section css design */
+.why-choose-us-section{
+    padding: 100px 100px 0px;
+}
+.why-choose-us-title{
+    color: #131318;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.why-choose-us-description{
+    padding: 24px 0px 48px 0px;
+    max-width: 630px;
+    margin: 0 auto;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.why-section-cards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.card{
+    max-width: 573px;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background-color: rgba(251, 181, 99, 0.05);
+    padding: 32px;
+}
+.card-map{
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background-color: rgba(41, 206, 246, 0.05);
+}
+.card-price{
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background-color: rgba(233, 68, 68, 0.05);
+}
+.card > h3{
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 32px 0px 16px 0px;
+}
+.card > p{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
+/* optional section one css design*/
+.optional-section-one{
+    padding: 100px 100px 0px;
+}
+.deals-discounts{
+    width: 640px;
+    margin: 0 auto;
+}
+.deals-title{
+    color: #131318;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.deals-discounts-description{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px; 
+}
+.deals-discounts-img-one{
+    margin-top: 45px;
+    height: 500px;
+    width: 100%;
+    background-image: url('../Images/Group\ 39.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 16px;
+}
+.deals-discounts-img-two{
+    height: 500px;
+    width: 100%;
+    background-image: url('../Images/Group\ 40.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 24px 0px;
+    border-radius: 16px;
+}
+
+.deals-discounts-card{
+    width: 579px;
+    height: 389px;
+    padding: 50px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background-color: rgba(255, 255, 255, 0.80);
+}
+.deals-discounts-card > p{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    width: 452px;
+}
+.deals-description{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.deals-description > span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.deals-discounts-card > h2{
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding: 18px 0px 12px 0px;
+}
+.deals-discounts-card > h3{
+    color: #FF5400;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 13px 0px 21px 0px;
+}
+.deals-discounts-card > button{
+    border-radius: 8px;
+    background-color: #FF5400;
+    padding: 15px 25px;
+    border: 0;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.see-botton{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.see-all-packages-btn{
+    border-radius: 8px;
+    background-color: #FF5400;
+    padding: 14px 22px;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 800;
+    width: 210px;
+}
+
+
+/* optional section second design */
+.optional-section-second{
+    padding: 100px 100px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.optional-description{
+    width: 50%;
+}
+.optional-second-section-title{
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 50px;
+}
+.optional-second-description{
+    width: 100%;
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 20px 0;
+}
+.optional-ul{
+    padding: 0px 16px;
+}
+.optional-ul > li{
+    width: 100%;
+    color: #131318;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px;
+}
+.optional-second-btn{
+    border-radius: 8px;
+    background-color: #FF5400;
+    padding: 14px 40px;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: 0;
+    margin: 20px 0px;
+}
+.optional-section-video{
+    width: 50%;
+    position: relative;
+}
+.optional-section-video > video{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+.optional-section-video > .optional-video-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 276px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 36px;
+}
+/* input and image section css design */
+.input-and-images-section{
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.input-description-section{
+    padding: 40px;
+    border: 1px solid #FF5400;
+    border-radius: 8px;
+    width: 50%;
+    height: 398px;
+}
+.input-description-section > h3{
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.input-description-section > p{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    width: 350px;
+}
+.newsletter-input > input{
+    display: block;
+    padding: 16px 20px;
+    width: 100%;
+    margin: 20px 0;
+    border: 0;
+    border-radius: 8px;
+    background-color: rgba(19, 19, 24, 0.05);
+}
+.newsletter-input > input[type="button"]{
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border-radius: 8px;
+    background-color: #FF5400;
+    border: 0;
+}
+.newletter-img{
+    width: 50%;
+    height: 398px;
+    background-image: url('../Images/Rectangle\ 8\ \(1\).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+}
+.img-inside-button{
+    width: 324px;
+    height: 100px;
+    background-color: #FF5400;
+    position: absolute;
+    right: 0;
+    bottom: 73px;
+    transform: rotate(-31deg);
+    border-radius: 16px;
+    text-align: center;
+    padding: 5px 10px;
+}
+.img-inside-button > p{
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.img-inside-button > h3{
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 800;
+}
+/* main part design end */
+
+
+/* footer section css design start */
+.footer{
+    background-color: rgba(19, 19, 24, 0.05);
+    text-align: center;
+    padding: 100px 250px 100px;
+}
+.footer-description{
+    color: #5A5A5D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 15px 0px 32px 0px;
+}
+.footer-name{
+    justify-content: center;
+}
+.footer-icons{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.footer-icons > a{
+    color: black;
+}
+.footer > hr{
+    height: 1px;
+    border: 0;
+    background-color: rgba(19, 19, 24, 0.10);
+}
+.all-rights{
+    margin-top: 50px;
+}
+/* footer section css design end */
+
+/* mobail for media quary style */
+
+@media screen and (max-width:600px) {
+    .header{
+        padding: 20px;
+    }
+    .navbar{
+        padding-bottom: 20px;
+    }
+    .logo{
+        width: 28px;
+    }
+    .name > .hero, .name > .travel{
+        font-size: 1.3rem;
+    }
+    .navbar > .manubar{
+        display: none;
+    }
+    .bar-icon{
+        display: block;
+    }
+    .banner{
+        height: auto;
+        padding: 32px 24px;
+    }
+    .banner-title{
+        font-size: 1.3rem;
+    }
+    .banner-description{
+        font-size: 0.8rem;
+        padding: 10px 0px 30px 0px;
+        line-height: 20px;
+    }
+    .all-input{
+        max-width: 270px;
+        flex-direction: column;
+        padding: 16px;
+    }
+    .all-input > input, select, button{
+        width: 198px;
+    }
+    .our-popular-tours{
+        gap: 0px;
+        padding: 24px 20px;
+        flex-direction: column;
+        height: auto;
+    }
+    .popular-description, .popular-img
+    {
+        width: 100%;
+    }
+    .our-popular-title{
+        font-size: 1.2rem;
+    }
+    .popular-description > .our-popular-description, ul > li{
+        font-size: 0.8rem;
+    }
+    .popular-img{
+        padding-top: 25px;
+    }
+    .choose-title{
+        font-size: 1.2rem;
+    }
+    .choose-description{
+        font-size: 0.8rem;
+    }
+    .choose-section-all-images{
+        margin-top: 16px;
+        gap: 16px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+    .choose-your-destination{
+        padding: 20px;
+    }
+    .choose-images-1{
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+    .choose-images-1 > img{
+        width: 100%;
+        height: 176px;
+    }
+    .choose-images-2{
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+    .choose-images-2 > img{
+        width: 100%;
+        height: 176px;
+    }
+    .choose-images-3{
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+    }
+    .choose-images-3 > img{
+        width: 100%;
+        height: 176px;
+    }
+    .choose-images-4{
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+    }
+    .choose-images-4 > img{
+        width: 100%;
+        height: 176px;
+    }
+    .choose-images-5{
+        grid-column: 1 / span 1;
+        grid-row: 5 / span 1;
+    }
+    .choose-images-5 > img{
+        width: 100%;
+        height: 176px;
+    }
+    .choose-images-6{
+        grid-column: 1 / span 1;
+        grid-row: 6 / span 1;
+    }
+    .choose-images-6 > img{
+        width: 100%;
+        height: 176px;
+    }
+    .choose-images-7{
+        grid-column: 1 / span 1;
+        grid-row: 7 / span 1;
+    }
+    .choose-images-7 > img{
+        width: 100%;
+        height: 176px;
+    }
+
+    .why-choose-us-section{
+        padding: 20px;
+    }
+    .why-choose-us-title{
+        font-size: 1.2rem;
+    }
+    .why-choose-us-description{
+        font-size: 0.8rem;
+        padding: 14px 0px 28px 0px;
+    }
+    .card{
+        width: 100%;
+        height: 289px;
+        padding: 25px;
+    }
+    .card > h3{
+        font-size: 1.2rem;
+        padding: 22px 0px 10px 0px;
+    }
+    .card > p{
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+
+    .optional-section-one{
+        padding: 20px;
+    }
+    .deals-title{
+        font-size: 1.2rem;
+    }
+    .deals-discounts-description{
+        padding: 16px 0;
+    }
+    .deals-discounts{
+        width: 100%;
+    }
+    .deals-discounts-img-one,
+    .deals-discounts-img-two{
+        padding: 16px;
+        align-items: end;
+    }
+    .deals-discounts-card{
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+    .deals-description{
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .deals-discounts-card > h2{
+        font-size: 1.2rem;
+    }
+    .deals-discounts-card > p{
+        width: 100%;
+        font-size: 0.8rem;
+        line-height: 18px;
+    }
+    .deals-discounts-card > h3{
+        font-size: 1rem;
+    }
+    .deals-discounts-card > button{
+        font-size: 1.1rem;
+        padding: 8px 20px;
+    }
+
+    .optional-section-second{
+        padding: 20px;
+        gap: 10;
+        flex-direction: column;
+    }
+    .optional-description{
+        width: 100%;
+    }
+    .optional-second-section-title{
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    .optional-second-btn{
+        margin: 10px 0px;
+    }
+    .optional-second-description{
+        line-height: 16px;
+    }
+    .optional-section-video{
+        width: 100%;
+    }
+    .optional-section-video > .optional-video-title{
+        font-size: 0.8rem;
+        width: 200px;
+        line-height: 16px;
+    }
+    .input-and-images-section{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .input-description-section{
+        width: 100%;
+        padding: 20px;
+        height: 100%;
+    }
+    .input-description-section > p{
+        width: 240px;
+
+    }
+    .newsletter-input > input[type="button"]{
+        margin-bottom: 5px;
+    }
+    .newletter-img{
+        width: 100%;
+    }
+    .newletter-img{
+        height: 300px;
+    }
+    .img-inside-button{
+        width: 214px;
+        height: 70px;
+        bottom: 48px;
+    }
+    .img-inside-button > p{
+        font-size: 0.9rem;
+    }
+    .img-inside-button > h3{
+        font-size: 1.2rem;
+    }
+    /* footer part design */
+    .footer{
+        padding: 30px 20px;
+    }
+    .footer-description{
+        padding: 15px;
+    }
+    .footer-icons{
+        margin-bottom: 24px;
+    }
+    .all-rights{
+        margin-top: 24px;
+    }
+}
